@@ -37,7 +37,6 @@ export class Tab1Page implements OnInit {
     this.messageService.getMessages().subscribe(data => {
       this.messages = data.map(e => {
         return {
-          id: e.payload.doc.id,
           ...e.payload.doc.data()
         } as Message;
       })
