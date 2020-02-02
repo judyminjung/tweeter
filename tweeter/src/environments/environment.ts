@@ -4,13 +4,15 @@
 
 export const environment = {
   production: false,
-  firebase: {
-    apiKey: '<your-key>',
-    authDomain: '<your-project-authdomain>',
-    databaseURL: '<your-database-URL>',
-    projectId: '<your-project-id>',
-    storageBucket: '<your-storage-bucket>',
-    messagingSenderId: '<your-messaging-sender-id>'
+  firebaseConfig: {
+    apiKey: "AIzaSyDpX9fBRR-5whr7fUasIFDHxOBYw4azj34",
+    authDomain: "tweeter-d3f22.firebaseapp.com",
+    databaseURL: "https://tweeter-d3f22.firebaseio.com",
+    projectId: "tweeter-d3f22",
+    storageBucket: "tweeter-d3f22.appspot.com",
+    messagingSenderId: "893001935581",
+    appId: "1:893001935581:web:9faa8fc44eb26ed1ba0934",
+    measurementId: "G-0XYPWR1SD3"
   }
 };
 
