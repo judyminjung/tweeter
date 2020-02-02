@@ -1,1 +1,13 @@
+ion-icon{
+    color: rgb(255, 196, 0);
+  }
 
+ion-label {
+    color: gray;
+}
+
+a:active {
+    ion-label {
+        color: rgb(255, 196, 0);
+    }
+}
