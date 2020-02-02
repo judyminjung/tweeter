@@ -1,8 +1,8 @@
 <ion-content>
   <div class="navbar text-center">
     <div style="margin: 0 auto">
-      <h4>Happy Tweets</h4>
-      <h6 class="font-italic">Your happiness-fix in a miserable world.</h6>
+      <h4>Happy Tweeter</h4>
+      <h6 class="font-italic">Anti-bullying Tweeter for Tweens.</h6>
     </div>
   </div>
 
@@ -11,15 +11,15 @@
       <div class="col-md-6 offset-md-3">
         <div class="jumbotron py-3">
           <h5>
-            Post something happy!
+            Only Happy Thoughts!
           </h5>
           <small>
             <p class="font-weight-light font-italic mb-3">
-              Our service will automagically use AI to analyse the sentiment of the message so you can live in the perfect happiness bubble you deserve.
+              Our service will automagically use AI to analyse the sentiment of your tweet. 
             </p>
           </small>
-          <textarea type="text" class="form-control mb-3" placeholder="Happiness is just seconds away..." [(ngModel)]="message.message"></textarea>
-          <div class="btn btn-primary" (click)="createMessage()">Go!</div>
+          <textarea type="text" class="form-control mb-3" placeholder="Tweet your message here." [(ngModel)]="message.message"></textarea>
+          <div class="btn btn-primary" (click)="createMessage()">Post</div>
         </div>
       </div>
     </div>
@@ -30,7 +30,7 @@
       <div class="col-12 col-md-8 offset-md-2">
         <div class="card">
           <div class="card-header">
-            The happiness stream
+            The happiness feed:
           </div>
           <ul class="list-group list-group-flush">
             <li class="list-group-item" *ngFor="let message of messages">
