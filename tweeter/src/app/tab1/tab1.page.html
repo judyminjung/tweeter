@@ -7,14 +7,8 @@
   </ion-title>
   </ion-toolbar>
 </ion-header>
-<ion-content>
-  <!-- <div class="navbar text-center">
-    <div style="margin: 0 auto">
-      <h4>Happy Tweeter</h4>
-      <h6 class="font-italic">Anti-bullying Tweeter for Tweens.</h6>
-    </div>
-  </div> -->
 
+<ion-content>
   <ion-card>
       <div class="white">
       <ion-card-header>
@@ -46,34 +40,13 @@
     </div>
     </ion-card>
 
-  <!-- <div class="container">
-    <div class="row">
-      <div class="col-md-6 offset-md-3">
-        <div class="jumbotron py-3">
-          <h5>
-            Only Happy Thoughts!
-          </h5>
-          <small>
-            <p class="font-weight-light font-italic mb-3">
-              Our service will automagically use AI to analyse the sentiment of your tweet. 
-            </p>
-          </small>
-          <textarea type="text" class="form-control mb-3" placeholder="Tweet your message here." [(ngModel)]="message.message"></textarea>
-          <div class="btn btn-primary" (click)="createMessage()">Post</div>
-        </div>
-      </div>
-    </div>
-  </div> -->
-
   <div class="container2">
     <div class="row mb-4">
       <div class="col-12 col-md-8 offset-md-2">
         <div class="card">
-          <div class="card-header">
-            The happiness feed:
-          </div>
           <ul class="list-group list-group-flush">
             <li class="list-group-item" *ngFor="let message of messages">
+                <ion-card class="white">
               <h6 class="text-primary font-weight-light">HAPPINESS SCORE: <span class="font-weight-bold">{{ message.score }}</span></h6>
               <h3 class="py-3">
                 {{ message.message }}
@@ -83,6 +56,7 @@
                   Posted on {{ message.dateCreated }}
                 </p>
               </small>
+            </ion-card>
             </li>
           </ul>
         </div>
