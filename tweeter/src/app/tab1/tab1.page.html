@@ -38,7 +38,9 @@
                       </p>
                     </small>
                     <textarea type="text" class="form-control mb-3" placeholder="Tweet your message here." [(ngModel)]="message.message"></textarea>
-                    <div class="btn btn-primary" (click)="createMessage()">Post</div>
+                    <div>
+                      <ion-button size="small" fill="outline" color="dark" (click)="createMessage()">Post</ion-button>
+                    </div>
                   </div>
                 </div>
               </div>
