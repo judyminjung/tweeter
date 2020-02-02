@@ -4,9 +4,12 @@ ion-card.background-card{
   margin-left: 10%;
 }
 
+.navbar-text-center {
+  color: white;
+}
+
 .white {
   text-align: center;
-  width: 90%;
 }
 
 ion-card {
@@ -18,5 +21,5 @@ ion-card {
 }
 
 ion-content.background{
-  --background: rgb(248, 219, 125);
+  --background: rgb(255, 200, 21);
 }
