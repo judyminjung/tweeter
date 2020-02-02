@@ -11,29 +11,20 @@
 <ion-content class="background">
     <div class="navbar-text-center">
         <div class = "heading" style="margin: 50px">
-          <h4>Happy Tweeter</h4>
-          <h6 class="font-italic">Anti-bully grammer check!</h6>
+          <h4>Happy Thoughts</h4>
+          <h6 class="font-italic">Bully-proof your thoughts!</h6>
         </div>
       </div>
   <ion-card>
       <div class="white">
-      <ion-card-header>
-        Welcome to Happy Tweeter
-        <ion-card-subtitle>Anti-bullying Tweeter for Tweens</ion-card-subtitle>
-      </ion-card-header>
       <ion-card-content>
           <div class="container1">
               <div class="row">
                 <div class="col-md-6 offset-md-3">
                   <div class="jumbotron py-3">
-                    <h5>
-                      Only Happy Thoughts!
-                    </h5>
-                    <small>
                       <p class="font-weight-light font-italic mb-3">
-                        Our service will automagically use AI to analyse the sentiment of your tweet. 
+                        Happy Thoughts will automagically use AI to analyze the sentiment of your thoughts. It will score your thoughts on a scale of 0 to 5, 5 being the happiest as can be! Negative thoughts are filtered for you.
                       </p>
-                    </small>
                     <textarea type="text" class="form-control mb-3" placeholder="Tweet your message here." [(ngModel)]="message.message"></textarea>
                     <div>
                       <ion-button size="small" fill="outline" color="dark" (click)="createMessage()">Post</ion-button>
